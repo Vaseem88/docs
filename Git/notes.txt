@@ -43,5 +43,11 @@ git clone https://github.com/test/test
 git clone https://github.com/test/test directoryName 
 
 
+--checking the status of your files 
+git status
+
+
+
+
 
 
