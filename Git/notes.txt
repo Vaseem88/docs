@@ -1,3 +1,5 @@
+-b Chapter 1
+
 git -v
 
 git config -l
@@ -15,3 +17,11 @@ git help config
 
 --get quick help 
 git config -h
+
+--get specific details for a config
+git config user.name
+
+
+-b Chapter 2 Git basics
+
+
