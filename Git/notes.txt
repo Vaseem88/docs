@@ -24,4 +24,24 @@ git config user.name
 
 -b Chapter 2 Git basics
 
+--initializing a repository in existing directory 
+
+git init
+
+--this creates a new sub directory named .git
+
+--add files for tracking 
+git add *.c
+git add readme
+git commit -m 'git commit message'
+
+
+--clone existing directory 
+
+git clone https://github.com/test/test
+
+git clone https://github.com/test/test directoryName 
+
+
+
 
