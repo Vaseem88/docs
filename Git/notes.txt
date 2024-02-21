@@ -1,0 +1,17 @@
+git -v
+
+git config -l
+
+--You can view all of your settings and where they are coming from using:
+git config --list --show-origin
+
+--set Identity
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+--Get Help by website with great details
+git help <verb>
+git help config
+
+--get quick help 
+git config -h
