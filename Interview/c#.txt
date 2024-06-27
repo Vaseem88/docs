@@ -9,3 +9,19 @@ What is CLR?
 
 What is .NET Framework Class Library? 
 --the class library provides a large set of pre-built functions and classes that can be used to create a wide range of applications
+
+What is .NET Core?
+-- .NET Core is a free open source, a general-purpose development platform for developing modern cloud-based software applications on Windows, Linux, and macOS operating systems.
+
+Cross-Platform
+Open Source
+High Performance
+Supports the development and implementation of micro-services
+
+What is .Net standard?
+-- .NET Standard solves the code sharing problem for .NET developers across all platforms by bringing all the APIs that you expect and love across the environments that you need: desktop applications, mobile apps & games, and cloud services:
+.NET Standard is a set of APIs that all .NET platforms have to implement. This unifies the .NET platforms and prevents future fragmentation.
+.NET Standard will be implemented by .NET Framework, .NET Core, and Xamarin.
+
+
+
