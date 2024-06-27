@@ -46,8 +46,170 @@ git clone https://github.com/test/test directoryName
 --checking the status of your files 
 git status
 
+--find the difference between modified files
+
+git diff
+ -- this compares your working directory with staging area
+
+
+git diff --staged
+--this compares your staged changes with the last commit 
+
+
+git difftool --tool-help
+--to see which GUI tool is available to view the difference between files
+
+
+git commit 
+-- to commit your changes but the above command will launch a editor of your choice to view the changes which will be committed 
+
+
+git commit -m "commit message here"
+-- to commit directly from command window 
+
+
+git commit -a -m "commit message here"
+
+-- this will commit all the changes (staged and unstaged) 
+
+git rm filename
+
+-- this to stage the file which had been removed from directory 
+
+
+git rm --cached filename
+
+-- verify this with removing files from staging area
+
+
+git mv file_from file_to
+-- this renames the files and also helpful for moving the files 
+
+git log 
+-- to view the list of existing commit history 
+
+One of the more helpful options is -p or --patch, which shows the difference (the patch output) introduced in each commit. You can also limit the number of log entries displayed, such as using -2 to show only the last two entries.
+
+git log -p -2
+
+git log --since=2.weeks
+
+--list of commits made in the last two weeks
+
+git log -S function_name
+
+--takes a string and shows only those commits that changed the number of occurrences of that string
+
+git log -- path/to/file
+
+--If you specify a directory or file name, you can limit the log output to commits that introduced a change to those files
+
+git commit --amend
+ ---If you want to redo that commit, make the additional changes
+
+git reset HEAD CONTRIBUTING.md
+--  to unstage of the file from staging area
+
+ git checkout -- CONTRIBUTING.md
+--unmodify it — revert it back to what it looked like 
+
+--From Git version 2.23.0 onwards, Git will use git restore instead of git reset for many undo operations.
+
+ git restore --staged CONTRIBUTING.md
+--  to unstage of the file from staging area
+
+--Unmodifying a Modified File with git restore
+git restore CONTRIBUTING.md
+--unmodify it — revert it back to what it looked like 
 
 
 
+--To see which remote servers you have configured, you can run the 
+git remote --command
+
+git remote -v
+
+--To add a new remote Git repository as a shortname you can reference easily, run
+ git remote add <shortname> <url>
 
 
+git remote add pb https://github.com/paulboone/ticgit
+
+git fetch pb
+
+git push origin master
+
+--push any commits you’ve done back up to the server
+
+
+--If you want to see more information about a particular remote, you can use the git remote show <remote>
+
+git remote show origin
+
+--if you want to rename pb to paul, you can do so with git remote rename:
+
+$ git remote rename pb paul
+$ git remote
+
+git remote remove paul
+
+--to remove the remote reference 
+
+
+
+--Listing the existing tags in Git 
+
+git tag -l 
+
+-- creates a new annotated tag
+
+git tag -a v1.4 -m "my version 1.4"
+
+-- You can see the tag data along with the commit
+
+git show v1.4
+
+--create a lightweight tag
+git tag v1.4-lw
+
+-- tag by commit 
+git tag -a v1.2 9fceb02
+
+
+-- By default, the git push command doesn’t transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. 
+
+git push origin v1.5
+
+git push origin --tags
+
+
+-- To delete a tag on your local repository, you can use git tag -d <tagname>
+
+git tag -d v1.4-lw
+
+-- to delete in remote server 
+
+git push origin --delete <tagname>
+
+-- create a branch from the tag 
+git checkout -b version2 v2.0.0
+
+-- merge branch
+git checkout master
+git merge hotfix
+
+--If you want to use a graphical tool to resolve these issues, you can run git mergetool, which fires up an appropriate visual merge tool and walks you through the conflicts
+
+git mergetool
+
+--listing of your current branches
+git branch
+
+--To synchronize your work with a given remote, you run a git fetch <remote> command 
+git fetch origin
+
+-- to push your changes to remote
+git push origin serverfix
+
+--If you don’t want to type it every single time you push, you can set up a “credential cache”. The simplest is just to keep it in memory for a few minutes, which you can easily set up by running 
+git config --global credential.helper cache
