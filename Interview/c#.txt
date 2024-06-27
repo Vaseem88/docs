@@ -1,1 +1,11 @@
+What is .NET Framework ?
+-- The .NET Framework is a software development framework developed by Microsoft that provides a runtime environment and a set of libraries and tools for building and running applications on Windows operating systems. The framework includes a variety of programming languages, such as C#, F#, and Visual Basic, and supports a range of application types, including desktop, web, mobile, and gaming applications.
 
+=> Two main components
+  -- the Common Language Runtime (CLR) and the .NET Framework Class Library
+
+What is CLR? 
+--  CLR is responsible for managing the execution of code written in any of the supported languages
+
+What is .NET Framework Class Library? 
+--the class library provides a large set of pre-built functions and classes that can be used to create a wide range of applications
