@@ -23,5 +23,67 @@ What is .Net standard?
 .NET Standard is a set of APIs that all .NET platforms have to implement. This unifies the .NET platforms and prevents future fragmentation.
 .NET Standard will be implemented by .NET Framework, .NET Core, and Xamarin.
 
+What is Delegate ?
+--A delegate is an object which refers to a method or you can say it is a reference type variable that can hold a reference to the methods.
+Delegates are mainly used in implementing the call-back methods and events
+Delegates can be chained together as two or more methods can be called on a single event
+
+Once a delegate is declared, delegate instance will refer and call those methods whose return type and parameter-list matches with the delegate declaration
+public delegate int GeeksForGeeks(int G, int F, int G);
+GeeksForGeeks GFG = new GeeksForGeeks (Geeks);
+// "Geeks" is the calling method.
+GFG(); // calling the Geeks method
+
+What is Multicasting of delegate ?
+-- to point more than one method in a single call.
+
+Delegates are combined and when you call a delegate then a complete list of methods is called.
+All methods are called in First in First Out(FIFO) order.
+‘+’ or ‘+=’ && ‘–’ or ‘-=’ Operator is used to add/remove the methods to delegates.
+multicasting of delegate should have a return type of Void otherwise it will throw a runtime exception
+
+What is Func delegate ?
+A Func is a built-in generic type delegate. This delegate saves you from defining a custom delegate
+It can contain minimum 0 and maximum of 16 input parameters in it and contain only one out parameter
+Func delegate is used for value returning methods
+
+
+        // the four parameters of int type 
+        // one result parameter of int type 
+        Func<int, int, int, int, int> val = mymethod; 
+        Console.WriteLine(val(10, 100, 1000, 1)); 
+
+Func<int, int, int, int> val = (int x, int y, int z) = > x + y + z; 
+
+What is Action Delegate ?
+It is defined under System namespace. It can contain minimum 1 and maximum of 16 input parameters and does not contain any output parameter. The Action delegate is generally used for those methods which do not contain any return value
+
+public delegate void Action < in P1, in P2 >(P1 arg1, P2 arg2);
+ // Here, Action delegate  
+        // contains two input parameters 
+        Action<int, int> val = myfun; 
+        val(20, 5);
+
+Action<string> val = str = > Console.WriteLine(str); 
+val("GeeksforGeeks"); 
+
+What is Predicate Delegate ?
+It works with those methods which contain some set of criteria and determine whether the passed parameter fulfill the given criteria or not. This delegate takes only one input and returns the value in the form of true or false
+
+        Predicate<string> val = myfun; 
+        Console.WriteLine(val("GeeksforGeeks")); 
+
+Predicate<string> val = delegate(string str) 
+{ 
+	if (mystring.Length < 7) 
+	{ 
+		return true; 
+	} 
+	else
+	{ 
+		return false; 
+	}; 
+	val("Geeks"); 
+}
 
 
