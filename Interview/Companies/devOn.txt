@@ -1,0 +1,52 @@
+interface IMethods
+{
+	void method1();
+	void method2();
+	void method3();
+	void method4();
+}
+ 
+class derived : IMethods
+{
+	void method1(){........some logic.....}
+	void method2(){........some logic.....}
+	void method3(){........some logic.....}
+	void method4(){........some logic.....}
+	void method5(){........some logic.....}
+	void method6(){........some logic.....}
+}
+ 
+derived d =  new derived();
+IMethods instance =  new derived();
+
+what is the output?
+
+
+public sealed className {
+
+private className _className;
+
+private className(){}
+
+public className GetclassName(){
+
+if(_className is null){
+_className = new className();
+} 
+
+return _className;
+
+}
+
+}
+
+What is the need of sealed class here ?
+  if you have a private constructor then sub classes cannot inherit the base class
+
+
+
+how do you register a service in asp.net ?
+
+can we have two classses implementing the same interface be registered ?
+
+what is the authentication mechanism you are currently using ?
