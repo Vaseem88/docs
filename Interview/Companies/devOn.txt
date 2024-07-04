@@ -40,9 +40,10 @@ return _className;
 
 }
 
-What is the need of sealed class here ?
+What is the need of sealed class in a singleton pattern ?
   if you have a private constructor then sub classes cannot inherit the base class
 
+How do you manage errors in the endpoint ?
 
 
 how do you register a service in asp.net ?
