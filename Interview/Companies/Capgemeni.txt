@@ -1,0 +1,49 @@
+{
+
+Automobile a1 = new Car();
+a1.Print("tata");
+a1.print();
+car c1 = (Car)a1;
+c1.print("mahindra");
+car c2  = new automobile();
+c2.print();
+}
+
+public class automobile{
+
+public static int count;
+public automobile(){
+  count=5;
+}
+public virtual void print(){
+  console.write("autumobile : {0}", count);
+
+}
+
+public virtual void print(string brand){
+  console.write("autumobile : {0}", brand);
+
+}
+}
+
+public class Car : Automobile 
+{
+  public override void print()
+  {
+    console.write("car :{0}", count);
+  }
+  public void print(string brand)
+  {
+    console.write("car :{0}", brand);
+  }
+}
+
+output:
+
+
+
+
+How do you solve this below problem
+
+input: abccdaba;
+output: aaabbccd;
