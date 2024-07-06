@@ -49,5 +49,12 @@ How do you manage errors in the endpoint ?
 how do you register a service in asp.net ?
 
 can we have two classses implementing the same interface be registered ?
+yes, this will work and the class which was last regiestered will be injected in the respective controllers.
+for ex:
+
+            builder.Services.AddTransient<ITestService, TestClass>();
+            builder.Services.AddTransient<ITestService, TestService>();
+
+	TestService class will be injected 
 
 what is the authentication mechanism you are currently using ?
