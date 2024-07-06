@@ -47,3 +47,6 @@ How do you solve this below problem
 
 input: abccdaba;
 output: aaabbccd;
+
+What is middlewares ?
+what is builder pattern ?
