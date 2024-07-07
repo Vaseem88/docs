@@ -15,4 +15,17 @@ the source code is converted to an intermediate code which is known as Common In
 Once the C# programs are compiled, they’re physically packaged into Assemblies. An assembly is a file that contains one or more namespaces and classes. As the number of classes and namespaces in program grows, it is physically separated by related namespaces into separate assemblies. Assemblies typically have the file extension .exe or .dll, depending on whether they implement applications or libraries respectively, where EXE stands for Executable and DLL stands for Dynamic Link Library. An EXE (Executable) file represents a program that can be executed and a DLL (Dynamic Link Library) file includes code (Eg: Library) that can be reused across different programs.
 
 
+access modifiers in c# ?
+Access Modifiers are keywords that define the accessibility of a member, class or datatype in a program
 
+public- Access is granted to the entire program
+
+protected - Access is limited to the class that contains the member and derived types of this class.
+
+internal - Access is limited to only the current Assembly, that is any class or type declared as internal is accessible anywhere inside the same namespace. It is the default access modifier in C#
+
+protected internal- A protected internal member of a base class is accessible from any type within its containing assembly. It is also accessible in a derived class located in another assembly only if the access occurs through a variable of the derived class type.
+
+private- Access is only granted to the containing class.
+
+private protected- Access is granted to the containing class and its derived types present in the current assembly.
