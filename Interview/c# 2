@@ -5,3 +5,14 @@ You can access public declared variables anywhere in the application.
 Static declared variables are globally accessible without creating an instance of the class.
 
  Void is a type modifier that specifies that the method doesn't return any value
+
+code compilation in c#??
+
+the source code is converted to an intermediate code which is known as Common Intermediate Language (CIL) or Intermediate Language Code (ILC or IL code). This CIL or IL Code can run on any operating system because C# is a Platform Independent Language.
+
+ Common Language Runtime (CLR) which translates the CIL or IL code to native code or machine understandable code or machine instructions. This process is called the Just-In-Time (JIT) Compilation or Dynamic Compilation which is the way of compiling code during the execution of a program at run time only.
+
+Once the C# programs are compiled, they’re physically packaged into Assemblies. An assembly is a file that contains one or more namespaces and classes. As the number of classes and namespaces in program grows, it is physically separated by related namespaces into separate assemblies. Assemblies typically have the file extension .exe or .dll, depending on whether they implement applications or libraries respectively, where EXE stands for Executable and DLL stands for Dynamic Link Library. An EXE (Executable) file represents a program that can be executed and a DLL (Dynamic Link Library) file includes code (Eg: Library) that can be reused across different programs.
+
+
+
