@@ -1,3 +1,6 @@
+
+
+
 What is .NET Framework ?
 -- The .NET Framework is a software development framework developed by Microsoft that provides a runtime environment and a set of libraries and tools for building and running applications on Windows operating systems. The framework includes a variety of programming languages, such as C#, F#, and Visual Basic, and supports a range of application types, including desktop, web, mobile, and gaming applications.
 
@@ -107,3 +110,24 @@ string s = "Hello Extension Methods";
 int i = s.WordCount();
 
 
+what is Anonymous Method ?
+
+An anonymous method is a method which doesn’t contain any name which is introduced in C# 2.0. It is useful when the user wants to create an inline method and also wants to pass parameter in the anonymous method like other methods. An Anonymous method is defined using the delegate keyword and the user can assign this method to a variable of the delegate type.
+
+class GFG { 
+  
+    public delegate void petanim(string pet); 
+  
+    // Main method 
+    static public void Main() 
+    { 
+  
+        // An anonymous method with one parameter 
+        petanim p = delegate(string mypet) 
+        { 
+            Console.WriteLine("My favorite pet is: {0}", 
+                                                 mypet); 
+        }; 
+        p("Dog"); 
+    } 
+}
