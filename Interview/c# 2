@@ -1,0 +1,7 @@
+What is the difference between public, static and void? 
+
+You can access public declared variables anywhere in the application.
+ 
+Static declared variables are globally accessible without creating an instance of the class.
+
+ Void is a type modifier that specifies that the method doesn't return any value
