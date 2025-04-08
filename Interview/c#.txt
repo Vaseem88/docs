@@ -1,7 +1,7 @@
 
 
 
-What is .NET Framework ?
+<b/> What is .NET Framework ?<b/> 
 -- The .NET Framework is a software development framework developed by Microsoft that provides a runtime environment and a set of libraries and tools for building and running applications on Windows operating systems. The framework includes a variety of programming languages, such as C#, F#, and Visual Basic, and supports a range of application types, including desktop, web, mobile, and gaming applications.
 
 => Two main components
